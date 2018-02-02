@@ -15,17 +15,16 @@ var _exercism$elm$Tests$tests = A2(
 			}),
 		_1: {
 			ctor: '::',
-			_0: _elm_community$elm_test$Test$skip(
-				A2(
-					_elm_community$elm_test$Test$test,
-					'pangram with only lower case',
-					function (_p2) {
-						var _p3 = _p2;
-						return A2(
-							_elm_community$elm_test$Expect$equal,
-							true,
-							_exercism$elm$Pangram$isPangram('the quick brown fox jumps over the lazy dog'));
-					})),
+			_0: A2(
+				_elm_community$elm_test$Test$test,
+				'pangram with only lower case',
+				function (_p2) {
+					var _p3 = _p2;
+					return A2(
+						_elm_community$elm_test$Expect$equal,
+						true,
+						_exercism$elm$Pangram$isPangram('the quick brown fox jumps over the lazy dog'));
+				}),
 			_1: {
 				ctor: '::',
 				_0: _elm_community$elm_test$Test$skip(

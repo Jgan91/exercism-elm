@@ -1,3 +1,8 @@
+var _exercism$elm$Pangram$hasLetter = F2(
+	function ($char, string) {
+		return false;
+	});
 var _exercism$elm$Pangram$isPangram = function (string) {
-	return true;
+	return false;
 };
+var _exercism$elm$Pangram$alphabet = A2(_elm_lang$core$String$split, '', 'abcdefghijklmnopqrstuvwxyz');
