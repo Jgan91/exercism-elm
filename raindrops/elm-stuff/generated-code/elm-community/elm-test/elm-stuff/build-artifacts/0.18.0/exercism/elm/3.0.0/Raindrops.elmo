@@ -1,0 +1,16 @@
+var _exercism$elm$Raindrops$raindrops = function ($int) {
+	var plong = _elm_lang$core$Native_Utils.eq(
+		A2(_elm_lang$core$Basics_ops['%'], $int, 7),
+		0) ? 'Plong' : '';
+	var plang = _elm_lang$core$Native_Utils.eq(
+		A2(_elm_lang$core$Basics_ops['%'], $int, 5),
+		0) ? 'Plang' : '';
+	var pling = _elm_lang$core$Native_Utils.eq(
+		A2(_elm_lang$core$Basics_ops['%'], $int, 3),
+		0) ? 'Pling' : '';
+	var raindropSpeak = A2(
+		_elm_lang$core$Basics_ops['++'],
+		pling,
+		A2(_elm_lang$core$Basics_ops['++'], plang, plong));
+	return (!_elm_lang$core$Native_Utils.eq(raindropSpeak, '')) ? raindropSpeak : _elm_lang$core$Basics$toString($int);
+};

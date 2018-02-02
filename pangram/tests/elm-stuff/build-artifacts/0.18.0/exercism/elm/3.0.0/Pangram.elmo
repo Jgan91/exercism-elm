@@ -1,0 +1,3 @@
+var _exercism$elm$Pangram$isPangram = function (string) {
+	return true;
+};

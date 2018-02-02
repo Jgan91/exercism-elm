@@ -1,0 +1,3 @@
+var _exercism$elm$Bob$hey = function (name) {
+	return 'Whatever';
+};

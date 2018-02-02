@@ -1,0 +1,4 @@
+var _exercism$elm$Raindrops$raindrops = function ($int) {
+	var _p0 = $int;
+	return _elm_lang$core$Basics$toString($int);
+};

@@ -1,0 +1,4 @@
+var _exercism$elm$Pangram$isPangram = function (string) {
+	return false;
+};
+var _exercism$elm$Pangram$alphabet = A2(_elm_lang$core$String$split, '', 'abcdefghijklmnopqrstuvwxyz');
