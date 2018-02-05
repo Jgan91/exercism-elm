@@ -1,0 +1,4 @@
+var _exercism$elm$Accumulate$accumulate = F2(
+	function ($function, list) {
+		return {ctor: '[]'};
+	});
