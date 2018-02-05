@@ -1,0 +1,50 @@
+var _exercism$elm$Triangle$violatesInequality = function (list) {
+	var _p0 = list;
+	if ((((_p0.ctor === '::') && (_p0._1.ctor === '::')) && (_p0._1._1.ctor === '::')) && (_p0._1._1._1.ctor === '[]')) {
+		return (_elm_lang$core$Native_Utils.cmp(_p0._0 + _p0._1._0, _p0._1._1._0) < 0) ? true : false;
+	} else {
+		return false;
+	}
+};
+var _exercism$elm$Triangle$lessThanEqual0 = function (x) {
+	return _elm_lang$core$Native_Utils.cmp(x, 0) < 1;
+};
+var _exercism$elm$Triangle$version = 2;
+var _exercism$elm$Triangle$Scalene = {ctor: 'Scalene'};
+var _exercism$elm$Triangle$Isosceles = {ctor: 'Isosceles'};
+var _exercism$elm$Triangle$Equilateral = {ctor: 'Equilateral'};
+var _exercism$elm$Triangle$triangleKind = F3(
+	function (x, y, z) {
+		var listSides = _elm_lang$core$List$sort(
+			{
+				ctor: '::',
+				_0: x,
+				_1: {
+					ctor: '::',
+					_0: y,
+					_1: {
+						ctor: '::',
+						_0: z,
+						_1: {ctor: '[]'}
+					}
+				}
+			});
+		if (A2(_elm_lang$core$List$any, _exercism$elm$Triangle$lessThanEqual0, listSides)) {
+			return _elm_lang$core$Result$Err('Invalid lengths');
+		} else {
+			if (_exercism$elm$Triangle$violatesInequality(listSides)) {
+				return _elm_lang$core$Result$Err('Violates inequality');
+			} else {
+				var _p1 = _elm_lang$core$Set$size(
+					_elm_lang$core$Set$fromList(listSides));
+				switch (_p1) {
+					case 1:
+						return _elm_lang$core$Result$Ok(_exercism$elm$Triangle$Equilateral);
+					case 2:
+						return _elm_lang$core$Result$Ok(_exercism$elm$Triangle$Isosceles);
+					default:
+						return _elm_lang$core$Result$Ok(_exercism$elm$Triangle$Scalene);
+				}
+			}
+		}
+	});

@@ -1,0 +1,8 @@
+var _exercism$elm$Triangle$version = 2;
+var _exercism$elm$Triangle$Scalene = {ctor: 'Scalene'};
+var _exercism$elm$Triangle$Isosceles = {ctor: 'Isosceles'};
+var _exercism$elm$Triangle$Equilateral = {ctor: 'Equilateral'};
+var _exercism$elm$Triangle$triangleKind = F3(
+	function (a, b, c) {
+		return _elm_lang$core$Result$Ok(_exercism$elm$Triangle$Equilateral);
+	});
